@@ -1,0 +1,1 @@
+# MinimalApi Slim Endpoints
