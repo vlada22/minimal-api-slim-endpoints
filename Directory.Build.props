@@ -3,7 +3,6 @@
         <!-- Nuget Packaging -->
         <Authors>vlada22</Authors>
         <PackageProjectUrl>https://github.com/vlada22/minimal-api-slim-endpoints</PackageProjectUrl>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageIcon>logo.png</PackageIcon>
         <RepositoryUrl>https://github.com/vlada22/minimal-api-slim-endpoints</RepositoryUrl>
