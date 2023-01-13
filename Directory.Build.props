@@ -1,7 +1,9 @@
 <Project>
     <PropertyGroup>
         <!-- Nuget Packaging -->
+        <PackageId>$(MSBuildProjectName)</PackageId>
         <Authors>vlada22</Authors>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageProjectUrl>https://github.com/vlada22/minimal-api-slim-endpoints</PackageProjectUrl>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageIcon>logo.png</PackageIcon>
@@ -9,6 +11,8 @@
         <Keywords>minimal api;slim endpoints;slim;endpoints;minimal;api;vlada22</Keywords>
         <Description>Minimal Api Slim Endpoints Extension</Description>
         <PackageTags>minimal api;slim endpoints;slim;endpoints;minimal;api;vlada22</PackageTags>
+        <RepositoryType>git</RepositoryType>
+        <Copyright>Copyright 2023 vlada22</Copyright>
 
         <EnablePackageValidation>true</EnablePackageValidation>
         <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -19,5 +23,6 @@
     <ItemGroup>
         <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath=""/>
         <None Include="$(MSBuildThisFileDirectory)logo.png" Pack="true" PackagePath=""/>
+        <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath=""/>
     </ItemGroup>
 </Project>
