@@ -63,6 +63,47 @@ app.MapSlimEndpoints();
 app.Run();
 ```
 
+## Common pitfalls
+Please do not capture any services in the `Handler` method that are injected into the endpoint class. Instead, inject the services into the `Handler` method directly.
+
+Injected services into the endpoint class should only be used in the `Configure` method.
+
+❌ **BAD** This example uses a service that is injected into the endpoint class.
+```csharp
+[SlimEndpoint(Path = "/hello", Method = "GET")]
+public partial class HelloEndpoint : ISlimEndpoint
+{
+    private readonly ExampleService _service;
+    
+    public HelloEndpoint(ExampleService service)
+    {
+        _service = service;
+    }
+
+    public void Configure(RouteHandlerBuilder builder)
+    {
+        builder.AllowAnonymous();
+    }
+
+    public Delegate Handler => (() => _service.GetExample());
+}
+```
+
+✅ **GOOD** This example injects the service directly into the `Handler` method.
+```csharp
+[SlimEndpoint(Path = "/hello", Method = "GET")]
+public partial class HelloEndpoint : ISlimEndpoint
+{
+    public void Configure(RouteHandlerBuilder builder)
+    {
+        builder.AllowAnonymous();
+    }
+
+    public Delegate Handler => ((ExampleService service) => service.GetExample());
+}
+```
+**Note**: Please see the [SampleDemo](./samples/SampleDemo) project for a complete example.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 

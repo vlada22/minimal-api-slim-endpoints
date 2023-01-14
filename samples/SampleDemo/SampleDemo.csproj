@@ -8,8 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\src\MinimalApi.SlimEndpoints.Abstractions\MinimalApi.SlimEndpoints.Abstractions.csproj" />
-      <ProjectReference Include="..\..\src\MinimalApi.SlimEndpoints.SourceGenerator\MinimalApi.SlimEndpoints.SourceGenerator.csproj"
-                        OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+      <ProjectReference Include="..\..\src\MinimalApi.SlimEndpoints.SourceGenerator\MinimalApi.SlimEndpoints.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,8 @@
+using SampleDemo.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<ExampleService>();
 
 builder.Services.AddSlimEndpoints();
 
@@ -10,7 +14,3 @@ app.MapGet("/", (IEnumerable<EndpointDataSource> endpointSources) =>
 app.MapSlimEndpoints();
 
 app.Run();
-
-public partial class Program
-{
-}
