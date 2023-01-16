@@ -1,7 +1,0 @@
-﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa0e6d9f_002Da5ee_002D4b9a_002D9446_002D3a7f5d171d1f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;tests&amp;gt;\&amp;lt;MinimalApi.SlimEndpoints.Tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Or&gt;
-    &lt;Project Location="/Users/vlada/Desktop/projects/tests/minimal-api-slim-endpoints/tests/MinimalApi.SlimEndpoints.Tests" Presentation="&amp;lt;tests&amp;gt;\&amp;lt;MinimalApi.SlimEndpoints.Tests&amp;gt;" /&gt;
-    &lt;Project Location="/Users/vlada/Desktop/projects/tests/minimal-api-slim-endpoints/tests/MinimalApi.SlimEndpoints.IntegrationTests" Presentation="&amp;lt;tests&amp;gt;\&amp;lt;MinimalApi.SlimEndpoints.IntegrationTests&amp;gt;" /&gt;
-  &lt;/Or&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

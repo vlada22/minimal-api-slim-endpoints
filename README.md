@@ -102,7 +102,11 @@ public partial class HelloEndpoint : ISlimEndpoint
     public Delegate Handler => ((ExampleService service) => service.GetExample());
 }
 ```
+
 **Note**: Please see the [SampleDemo](./samples/SampleDemo) project for a complete example.
+
+## Change log
+Please see the [CHANGELOG](./CHANGELOG.md) for more information on what has changed recently.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
